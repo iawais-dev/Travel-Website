@@ -7,9 +7,11 @@ import person2 from '../imgs/person-2.png'
 import person3 from '../imgs/person-3.png'
 import person4 from '../imgs/person-4.png'
 import quote from '../imgs/quote.svg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 function Camp() {
   return (
-  <section className='font-abc relative max-w-[1536px] mx-auto 2xl:px-10' >
+  <section className='font-abc relative max-w-[1536px] mx-auto 2xl:px-10' data-aos='zoom-in'>
         <div className='flex hide-scrollbar  xl:h-screen flex-nowrap gap-8 overflow-x-scroll  ' style={{}}>
           <div className='flex flex-col w-full   min-w-[1100px] py-5  pl-7 justify-between lg:py-10 lg:pl-20 mt-44 2xl:rounded-5xl lg:rounded-e-5xl overflow-hidden bg-no-repeat' style={{backgroundImage: `url(${bg})`}}>
       

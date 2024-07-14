@@ -6,6 +6,8 @@ import tech from '../imgs/tech.svg'
 import location from '../imgs/location.svg'
 import phone from '../imgs/phone.png'
 import featurebg from '../imgs/feature-bg.png'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 function Features() {
   return (
     <section  className='overflow-hidden'>
@@ -18,7 +20,8 @@ function Features() {
 
        
        
-            <div className=' lg:w-[60%] 3xl:p-0 p-5 mt-16 lg:pr-20 lg:pl-0   '>
+            <div className=' lg:w-[60%] 3xl:p-0 p-5 mt-16 lg:pr-20 lg:pl-0   ' data-aos='fade-down' data-aos-easing="linear"
+     data-aos-duration="1000">
             <div className='relative'>
            <img src={camp} className='-top-4 absolute h-9 lg:h-14 lg:-top-6 lg:-left-2 ' alt="" />
            <h1 className='font-bold text-[40px] font-abc lg:text-[4rem]'>Our Features</h1>

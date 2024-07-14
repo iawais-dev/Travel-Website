@@ -8,7 +8,8 @@ function GetApp() {
   return (
     <section className=' ' >
        <div className='p-5 pt-10 sm:flex  sm:items-center sm:pb-24 lg:px-20 relative xl:py-28 xl:pb-40 bg-no-repeat bg-cover mt-20  bg-green-90  2xl:rounded-5xl  bg-center overflow-hidden max-w-[1440px] mx-auto xl:max-h-[598px]    'style={{backgroundImage :`url(${bg})`}}>
-        <div className='w-full sm:pr-10 flex flex-col sm:w-[50%] xl:pr-0 '>
+        <div className='w-full sm:pr-10 flex flex-col sm:w-[50%] xl:pr-0 ' data-aos='fade-right' data-aos-easing="linear"
+     data-aos-duration="700">
             <h1 className='text-white  text-[43px] leading-[120%] pr-16 font-abc font-bold sm:pr-0 sm:text-[40px] lg:text-[62px] xl:w-80 '>Get for free now!</h1>
             <p className='text-white mt-10 font-abc'>Available on iOS and Android</p>
            
@@ -29,7 +30,8 @@ function GetApp() {
             
         </div>
            
-           <div className='mt-40 sm:mt-12 sm:w-[50%] flex flex-1 items-center justify-center xl:right-0   xl:absolute'>
+           <div className='mt-40 sm:mt-12 sm:w-[50%] flex flex-1 items-center justify-center xl:right-0   xl:absolute' data-aos='fade-left' data-aos-easing="linear"
+     data-aos-duration="700">
            <img src={phones} className='  ' width={550} height={870} alt="" />
 
            </div>

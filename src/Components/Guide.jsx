@@ -2,9 +2,11 @@ import React from 'react'
 import camp from '../imgs/camp.svg'
 import boat from '../imgs/boat.png'
 import meter from '../imgs/meter.svg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 function Guide() {
   return (
-   <section className='max-w-[1440px] mx-auto lg:mt-24 xl:mt-52'>
+   <section className='max-w-[1440px] mx-auto lg:mt-24 xl:mt-52' >
     <div className='p-5 lg:p-10 lg:px-20 3xl:px-0 '>
       <img src={camp} className='' alt="" />
            <h2 className='text-green-50 text-[20px]'>WE ARE HERE FOR YOU</h2>
@@ -17,7 +19,8 @@ function Guide() {
        
     </div>
 
-    <div className=' bg-cover bg-center mt-20 relative flex items-center justify-center '>
+    <div className=' bg-cover bg-center mt-20 relative flex items-center justify-center ' data-aos='zoom-in' data-aos-easing="linear"
+     data-aos-duration="500">
         <img src={boat} className='w-full object-cover 2xl:rounded-5xl  relative object-center' alt="" />
    <div className='flex w-[17rem] p-5 bg-white rounded-3xl  shadow-lg mx-auto   py-8 pl-5 pr-7  absolute md:left-10 lg:top-20 lg:left-20'>
   <img src={meter} alt="" />

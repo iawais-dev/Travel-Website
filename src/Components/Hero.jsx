@@ -6,7 +6,7 @@ import cross from '../imgs/close.svg'
 import bg from '../imgs/pattern-bg.png'
 function Hero() {
   return (
-    <section className='relative overflow-hidden'>
+    <section className='relative overflow-hidden pb-10 '>
       <div className='px-6 lg:px-20 3xl:px-0  mx-auto max-w-[1440px] flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row '>
    
     

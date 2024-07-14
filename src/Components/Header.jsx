@@ -22,11 +22,11 @@ function Header() {
          
            <div className='  hidden lg:flex  font-abc' >
                          <ul className='gap-12  hidden lg:flex'>
-                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' data-aos='zoom-in' data-aos-duration='700'>Home</li>
-                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' data-aos='zoom-in' data-aos-duration='700'>How Hilink Work?</li>
-                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' data-aos='zoom-in' data-aos-duration='700'>Services</li>
-                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' data-aos='zoom-in' data-aos-duration='700'>Pricing</li>
-                            <li className='cursor-pointer text-gray-50 transition-all  hover:font-bold ' data-aos='zoom-in' data-aos-duration='700'>Contact Us</li>
+                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all'>Home</li>
+                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' >How Hilink Work?</li>
+                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' >Services</li>
+                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' >Pricing</li>
+                            <li className='cursor-pointer text-gray-50 transition-all  hover:font-bold ' >Contact Us</li>
                          </ul>
                 </div>
            <div className='flex justify-center gap-2'>
@@ -43,7 +43,7 @@ function Header() {
            
         </div>
         {
-                menu ? <div className='bg-green-50 text-white lg:hidden p-2 px-5   right-0 top-20' data-aos='fade-down' data-aos-duration='500'>
+                menu ? <div className='bg-green-50 text-white lg:hidden p-2 px-5 absolute z-50 w-screen  right-0 top-20' data-aos='fade-down' data-aos-duration='500'>
                          <ul className='gap-6  flex flex-col mb-10 mt-10'>
                             <li className='cursor-pointer hover:font-bold transition duration-150'>Home</li>
                             <li className='cursor-pointer hover:font-bold transition duration-150'>How Hilink Work?</li>
