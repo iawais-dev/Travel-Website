@@ -13,10 +13,7 @@ function Header() {
     useEffect(()=>{
       Aos.init()
     },[])
-    const onsub = ()=>{
-      setMenu(false)
-    }
-  
+ 
   return (      
     <header className=' mx-auto max-w-[1440px]  overflow-hidden'>
         <div className='flex  p-5 px-6 lg:px-20 3xl:px-0 items-center justify-between'>
@@ -27,9 +24,9 @@ function Header() {
            <div className='  hidden lg:flex  font-abc' >
                          <ul className='gap-12  hidden lg:flex'>
                             <li className='cursor-pointer text-gray-50 hover:font-bold transition-all'> Home  </li>
-                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' ><Link to='Guide' span={true} smooth={true}> How Hilink Work? </Link>   </li>
-                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' > <Link to='services' span={true} smooth={true}> Services </Link> </li>
-                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' > <Link to='purchase' span={true} smooth={true}>  Pricing </Link>  </li>
+                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' ><Link to='Guide' smooth={true}> How Hilink Work? </Link>   </li>
+                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' > <Link to='services'  smooth={true}> Services </Link> </li>
+                            <li className='cursor-pointer text-gray-50 hover:font-bold transition-all' > <Link to='purchase' smooth={true}>  Pricing </Link>  </li>
                             <li className='cursor-pointer text-gray-50 transition-all  hover:font-bold ' >Contact Us</li>
                          </ul>
                 </div>
@@ -49,11 +46,11 @@ function Header() {
         {
                 menu ? <div className='bg-green-50 text-white lg:hidden p-2 px-5 absolute z-50 w-screen  right-0 top-20' data-aos='fade-down' data-aos-duration='500'>
                          <ul className='gap-6  flex flex-col mb-10 mt-10'>
-                            <li className='cursor-pointer hover:font-bold transition duration-150' onClick={onsub} >Home</li>
-                            <li className='cursor-pointer hover:font-bold transition duration-150' onClick={onsub} ><Link to='Guide' span={true} smooth={true}> How Hilink Work? </Link> </li>
-                            <li className='cursor-pointer hover:font-bold transition duration-150' onClick={onsub} ><Link to='services' span={true} smooth={true}> Services </Link> </li>
-                            <li className='cursor-pointer hover:font-bold transition duration-150' onClick={onsub} ><Link to='purchase' span={true} smooth={true}>  Pricing </Link></li>
-                            <li className='cursor-pointer hover:font-bold transition duration-150' onClick={onsub} >Contact Us</li>
+                            <li className='cursor-pointer hover:font-bold transition duration-150' onClick={()=>{setMenu(false)}} >Home</li>
+                            <li className='cursor-pointer hover:font-bold transition duration-150' onClick={()=>{setMenu(false)}} ><Link to='Guide'  smooth={true}> How Hilink Work? </Link> </li>
+                            <li className='cursor-pointer hover:font-bold transition duration-150' onClick={()=>{setMenu(false)}} ><Link to='services'  smooth={true}> Services </Link> </li>
+                            <li className='cursor-pointer hover:font-bold transition duration-150' onClick={()=>{setMenu(false)}}><Link to='purchase' smooth={true}>  Pricing </Link></li>
+                            <li className='cursor-pointer hover:font-bold transition duration-150'onClick={()=>{setMenu(false)}} >Contact Us</li>
                          </ul>
                 </div> : null
             }
