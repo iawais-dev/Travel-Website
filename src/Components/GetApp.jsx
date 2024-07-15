@@ -6,7 +6,7 @@ import bg from '../imgs/pattern.png'
 
 function GetApp() {
   return (
-    <section className=' ' >
+    <section className=' ' id='purchase'>
        <div className='p-5 pt-10 sm:flex  sm:items-center sm:pb-24 lg:px-20 relative xl:py-28 xl:pb-40 bg-no-repeat bg-cover mt-20  bg-green-90  2xl:rounded-5xl  bg-center overflow-hidden max-w-[1440px] mx-auto xl:max-h-[598px]    'style={{backgroundImage :`url(${bg})`}}>
         <div className='w-full sm:pr-10 flex flex-col sm:w-[50%] xl:pr-0 ' data-aos='fade-right' data-aos-easing="linear"
      data-aos-duration="700">

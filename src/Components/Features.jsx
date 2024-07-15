@@ -10,7 +10,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 function Features() {
   return (
-    <section  className='overflow-hidden'>
+    <section  className='overflow-hidden' id='services'>
         <div className='lg:flex lg:items-center relative lg:justify-end max-w-[1440px] 2xl:mb-14 3xl:mb-28 mx-auto  bg-cover bg-no-repeat bg-center lg:pt-5'style={{backgroundImage: `url(${featurebg})`}}>
          <div className='hidden lg:flex lg:min-h-[900px]  ' >
 

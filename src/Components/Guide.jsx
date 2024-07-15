@@ -6,7 +6,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 function Guide() {
   return (
-   <section className='max-w-[1440px] mx-auto lg:mt-24 xl:mt-52' >
+   <section className='max-w-[1440px] mx-auto lg:mt-24 xl:mt-52'id='Guide'  >
     <div className='p-5 lg:p-10 lg:px-20 3xl:px-0 '>
       <img src={camp} className='' alt="" />
            <h2 className='text-green-50 text-[20px]'>WE ARE HERE FOR YOU</h2>
